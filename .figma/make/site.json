@@ -1,0 +1,10 @@
+{
+  "description": "This school landing page showcases essential information about the institution, helping prospective students and parents easily access details about programs, admissions, and events.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
