@@ -9,25 +9,31 @@ const PROGRAMMES = [
   {
     level: 'Playgroup',
     age: 'Ages 2 – 3',
-    desc: 'A safe, loving space where toddlers explore through play, music, and story — building social skills, language, and confidence.',
+    desc: 'Sensory exploration, socialization, music, and motor skill development in a warm, nurturing space.',
     emoji: '🌱',
   },
   {
-    level: 'PP1 & PP2 (Pre-Primary)',
-    age: 'Ages 4 – 5',
-    desc: 'CBC foundational learning through language, mathematical, environmental, and psychomotor activities preparing learners for primary.',
+    level: 'PP1 (Pre-Primary 1)',
+    age: 'Age 4',
+    desc: 'CBC foundational areas: Language, Mathematical activities, Environmental, and Psychomotor skills.',
+    emoji: '🎨',
+  },
+  {
+    level: 'PP2 (Pre-Primary 2)',
+    age: 'Age 5',
+    desc: 'Phonics, early numeracy, social values, and creative expression preparing learners for Lower Primary.',
     emoji: '🌻',
   },
   {
     level: 'Lower Primary',
     age: 'Grade 1 – 3',
-    desc: 'Literacy, numeracy, hygiene & nutrition, environmental activities, and creative arts brought to life through CBC tasks.',
+    desc: 'CBC Key Stage 1: Literacy, Kiswahili, English, Math, Hygiene & Nutrition, and Creative Arts.',
     emoji: '📚',
   },
   {
     level: 'Upper Primary',
     age: 'Grade 4 – 6',
-    desc: 'Expanding critical thinking, science & technology, digital literacy, agriculture, and social studies in line with CBC standards.',
+    desc: 'CBC Key Stage 2: Science & Tech, Agriculture, Social Studies, Creative Arts, and Digital Literacy.',
     emoji: '🔬',
   },
 ]
@@ -242,7 +248,7 @@ export default function App() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {PROGRAMMES.map(p => (
               <div key={p.level} className="group bg-white hover:bg-[#7b1c35] border border-[#f0d8df] hover:border-[#7b1c35] rounded-2xl p-6 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-xl">
                 <div className="text-3xl mb-4">{p.emoji}</div>
