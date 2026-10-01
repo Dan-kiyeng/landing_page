@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import logo from './assets/reference.png'
-import whatsappImg from './assets/WhatsApp Image 2026-09-29 at 21.41.00.jpeg'
+import whatsappImg from './assets/whatsapp-hero.jpeg'
 import CloudSky from './components/CloudSky'
 
 const NAV_LINKS = ['About Us', 'Programmes', 'Gallery', 'Admissions', 'Contact']
