@@ -445,16 +445,11 @@ export default function App() {
                 <h2 style={{ fontFamily: 'Fraunces, serif' }} className="text-3xl font-bold text-[#5a1226]">
                   Grace Seeds Sky & Environment
                 </h2>
-                <p className="text-[#8a6470] text-sm mt-1">Move your cursor or touch to interact with the sky and clouds</p>
+                <p className="text-[#8a6470] text-sm mt-1">Let's fly</p>
               </div>
 
               <div className="rounded-3xl overflow-hidden shadow-xl border border-[#f0d8df] relative h-72 lg:h-96">
                 <CloudSky style={{ minWidth: 0, minHeight: 0, width: '100%', height: '100%' }} />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#5a1226]/60 via-transparent to-transparent flex items-end p-6 pointer-events-none">
-                  <p className="text-white font-semibold text-sm lg:text-base drop-shadow">
-                    ☁️ Move your mouse across the canvas to control cloud density, lighting, and wind
-                  </p>
-                </div>
               </div>
             </div>
           </section>
