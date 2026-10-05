@@ -105,7 +105,7 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
     keyAreas: [
       { title: 'Advanced Phonics & Reading', desc: 'Blending 3-4 letter words, reading simple sentences, and creative writing.', icon: '✏️' },
       { title: 'Numeracy & Logic', desc: 'Basic addition, pattern completion, time awareness, and practical measurement.', icon: '📊' },
-      { title: 'Religious & Moral Education', desc: 'Character building, Christian values, respect for peers, and community service.', icon: '✝️' },
+      { title: 'Religious & Moral Education', desc: 'Character building, Christian values, respect for peers, and teamwork.', icon: '✝️' },
       { title: 'Digital Literacy Intro', desc: 'Basic computer interaction, educational tablet learning games.', icon: '💻' }
     ],
     competencies: [
@@ -125,7 +125,7 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
     highlights: [
       'Graduation ceremony at the end of PP2',
       'Introductory computer & tablet lab sessions',
-      'Public speaking & drama participation',
+      'Public speaking & French language introduction',
       'Structured preparation for Primary School transitions'
     ],
     classRatio: '1 : 15'
@@ -140,10 +140,10 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
     tagline: 'Building strong academic foundations, critical thinking, and digital skills.',
     overview: 'Lower Primary marks the beginning of official primary education under Kenya’s CBC curriculum. Pupils engage deeply with Literacy, Mathematics, Environmental Studies, Creative Arts, and Hygiene Education through project-based learning.',
     keyAreas: [
-      { title: 'Literacy & Languages', desc: 'English Activities, Kiswahili Shughuli za Lugha, and Indigenous Language.', icon: '📖' },
+      { title: 'Literacy & Languages', desc: 'English Activities, Kiswahili Shughuli za Lugha, and French basics.', icon: '📖' },
       { title: 'Mathematics', desc: 'Numbers, Operations, Geometry, Measurement, and Data handling.', icon: '📐' },
       { title: 'Hygiene & Nutrition', desc: 'Personal wellbeing, healthy eating, food safety, and community health.', icon: '🍎' },
-      { title: 'Movement & Creative Arts', desc: 'Music, Physical Education, Art & Craft projects, and sports.', icon: '🎨' }
+      { title: 'Movement & Creative Arts', desc: 'Physical Education, Skating, Swimming, Art & Craft projects, and sports.', icon: '🎨' }
     ],
     competencies: [
       'Critical thinking & problem solving',
@@ -155,14 +155,14 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
       { time: '07:30 AM - 08:00 AM', activity: 'School Assembly & Pastoral Instruction' },
       { time: '08:00 AM - 10:00 AM', activity: 'Core Academics: Mathematics & English' },
       { time: '10:00 AM - 10:30 AM', activity: 'Health Break & Refreshments' },
-      { time: '10:30 AM - 12:30 PM', activity: 'Kiswahili, Science & Environmental Projects' },
+      { time: '10:30 AM - 12:30 PM', activity: 'Kiswahili, French, Science & Environmental Projects' },
       { time: '12:30 PM - 01:30 PM', activity: 'Lunch & Supervised Sports' },
-      { time: '01:30 PM - 03:30 PM', activity: 'Creative Arts, Clubs & Homework Guidance' }
+      { time: '01:30 PM - 03:30 PM', activity: 'Creative Arts, Computer & Skating Clubs' }
     ],
     highlights: [
       'CBC Portfolio management & continuous assessment',
       'Computer lab access & interactive smart learning',
-      'Clubs: Debate, Chess, Robotics, Music & Scouting',
+      'Clubs: Computer, Skating, French, Swimming & Chess',
       'Educational field visits & science expos'
     ],
     classRatio: '1 : 15'
@@ -175,16 +175,16 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
     emoji: '🔬',
     colorTheme: 'from-emerald-500/20 to-teal-500/20',
     tagline: 'Empowering young leaders, scientific inquiry, and global perspective.',
-    overview: 'In Upper Primary, pupils delve into STEM, Agriculture, Social Studies, and advanced languages. They develop leadership qualities, analytical capabilities, research skills, and ethical responsibility as they prepare for Junior Secondary School.',
+    overview: 'In Upper Primary, pupils delve into STEM, Computer Literacy, Social Studies, and French. They develop leadership qualities, analytical capabilities, research skills, and ethical responsibility as they prepare for Junior Secondary School.',
     keyAreas: [
       { title: 'Science & Technology', desc: 'Practical experiments, computing, living things, and energy forms.', icon: '🧪' },
-      { title: 'Agriculture & Nutrition', desc: 'Hands-on gardening, crop care, livestock concepts, and food preparation.', icon: '🌾' },
+      { title: 'Environmental & Life Skills', desc: 'Hands-on environmental care, health, food preparation, and practical life skills.', icon: '🌿' },
       { title: 'Social Studies & Christian Religious Education', desc: 'History, geography, governance, morals, and civic duty.', icon: '🗺️' },
-      { title: 'Creative Arts & Sports', desc: 'Music composition, visual art exhibitions, athletics, and ball games.', icon: '⚽' }
+      { title: 'Creative Arts & Sports', desc: 'French language, visual art exhibitions, swimming, skating, and ball games.', icon: '⚽' }
     ],
     competencies: [
       'Scientific method & experiment reporting',
-      'Advanced ICT proficiency & coding basics',
+      'Advanced ICT & computer proficiency',
       'Leadership & team management skills',
       'Integrity, empathy & spiritual grounding'
     ],
@@ -192,12 +192,12 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
       { time: '07:20 AM - 07:50 AM', activity: 'Assembly & Morning Briefing' },
       { time: '07:50 AM - 10:00 AM', activity: 'STEM, Science & Mathematics Intensive' },
       { time: '10:00 AM - 10:30 AM', activity: 'Nutrition & Socializing Break' },
-      { time: '10:30 AM - 01:00 PM', activity: 'Languages, Social Studies & Agriculture Lab' },
+      { time: '10:30 AM - 01:00 PM', activity: 'Languages, French, Social Studies & Computer Lab' },
       { time: '01:00 PM - 02:00 PM', activity: 'Lunch & Student Council / Peer Mentoring' },
-      { time: '02:00 PM - 03:45 PM', activity: 'Co-curricular Clubs, Sports & Assessment Work' }
+      { time: '02:00 PM - 03:45 PM', activity: 'Co-curricular Clubs, Swimming, Skating & Assessment Work' }
     ],
     highlights: [
-      'Modern Science & Agriculture demonstration plots',
+      'Modern Science & Computer Digital Labs',
       'Junior Leadership Council opportunities',
       'Annual Science & Innovation Fair',
       'Comprehensive prep for transition to Junior Secondary'
@@ -207,14 +207,14 @@ export const PROGRAMMES_DATA: ProgrammeDetail[] = [
 ]
 
 export const CLUBS_DATA = [
-  { name: 'Robotics & Coding', category: 'STEM & Tech', icon: '🤖', desc: 'Hands-on block coding and logic puzzles to inspire future tech leaders.' },
-  { name: 'Grace Seeds Choir & Music', category: 'Performing Arts', icon: '🎵', desc: 'Vocal training, keyboard, guitar, and traditional musical instruments.' },
-  { name: 'Young Farmers & Environment', category: 'Agriculture', icon: '🌱', desc: 'Organic gardening, environmental conservation, and tree planting.' },
+  { name: 'Computer & ICT Club', category: 'STEM & Tech', icon: '💻', desc: 'Hands-on digital skills, computer literacy, and interactive technology tools.' },
+  { name: 'Skating Club', category: 'Sports & Fitness', icon: '🛼', desc: 'Professional roller skating training focusing on balance, coordination, and safety.' },
+  { name: 'French Language Club', category: 'Languages', icon: '🇫🇷', desc: 'Interactive French conversational practice, songs, stories, and cultural immersion.' },
+  { name: 'Swimming Club', category: 'Sports & Fitness', icon: '🏊‍♂️', desc: 'Supervised swimming lessons building water confidence, safety, and stroke techniques.' },
   { name: 'Debate & Public Speaking', category: 'Languages', icon: '🎙️', desc: 'Honing eloquence, critical arguments, and stage confidence.' },
-  { name: 'Scouts & Girl Guides', category: 'Character & Service', icon: '⛺', desc: 'First aid, camping skills, discipline, and community outreach.' },
   { name: 'Art, Craft & Design', category: 'Creative Arts', icon: '🎨', desc: 'Painting, pottery, origami, and recycled material innovations.' },
   { name: 'Chess & Strategy Club', category: 'Mind Sports', icon: '♟️', desc: 'Developing patience, tactical thinking, and foresight.' },
-  { name: 'Athletics & Sports Club', category: 'Physical Health', icon: '⚽', desc: 'Football, basketball, swimming, gymnastics, and athletics.' }
+  { name: 'Athletics & Ball Games', category: 'Sports & Fitness', icon: '⚽', desc: 'Football, basketball, gymnastics, and athletics training.' }
 ]
 
 export const FAQS_DATA = [
@@ -232,7 +232,7 @@ export const FAQS_DATA = [
   },
   {
     q: 'Are extra-curricular clubs included in the school routine?',
-    a: 'Yes! Club activities run weekly on Tuesday and Thursday afternoons. Learners choose clubs based on their interests, from Robotics to Music and Scouting.'
+    a: 'Yes! Club activities run weekly on Tuesday and Thursday afternoons. Learners choose clubs based on their interests, from Computer & ICT to French, Skating, and Swimming.'
   },
   {
     q: 'What is the teacher-to-pupil ratio at Grace Seeds?',
@@ -263,7 +263,7 @@ export default function ProgrammesPage({ onNavigateHome, onOpenApplyModal }: Pro
     message: ''
   })
 
-  const categories = ['All', 'STEM & Tech', 'Performing Arts', 'Agriculture', 'Languages', 'Character & Service', 'Creative Arts', 'Mind Sports', 'Physical Health']
+  const categories = ['All', 'STEM & Tech', 'Languages', 'Creative Arts', 'Mind Sports', 'Sports & Fitness']
 
   const filteredClubs = selectedClubCategory === 'All' 
     ? CLUBS_DATA 

@@ -58,7 +58,7 @@ const PROGRAMMES = [
   {
     level: 'Upper Primary',
     age: 'Grade 4 – 6',
-    desc: 'CBC Key Stage 2: Science & Tech, Agriculture, Social Studies, Creative Arts, and Digital Literacy.',
+    desc: 'CBC Key Stage 2: Science & Tech, Social Studies, Creative Arts, and Digital Literacy.',
     emoji: '🔬',
   },
 ]

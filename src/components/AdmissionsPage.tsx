@@ -69,7 +69,7 @@ export const FEE_STRUCTURE_DATA = [
     level: 'Upper Primary (Grades 4 – 6)',
     termFee: 'KSh 27,000',
     admissionFee: 'KSh 3,500 (One-off)',
-    includes: ['Science & Agri Labs', 'Coding & Robotics Club', 'Educational Excursions', 'Leadership Training'],
+    includes: ['Science & Digital Labs', 'Computer & ICT Club', 'Educational Excursions', 'Leadership Training'],
     badge: 'Key Stage 2',
   },
 ]
