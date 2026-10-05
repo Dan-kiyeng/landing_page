@@ -286,9 +286,6 @@ export default function App() {
 
             <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-20 grid lg:grid-cols-2 gap-12 items-center w-full">
               <div>
-                <div className="inline-flex items-center gap-2 bg-[#e8a92a]/20 border border-[#e8a92a]/40 rounded-full px-4 py-1.5 mb-6">
-                  <span className="text-[#f5c84a] text-xs font-bold tracking-widest uppercase">CBC Model · Playgroup – Grade 6</span>
-                </div>
                 <h1 style={{ fontFamily: 'Fraunces, serif' }} className="text-5xl lg:text-6xl font-bold text-white leading-[1.08] mb-5">
                   The Future<br />
                   <em className="text-[#f5c84a] not-italic">Begins Here</em>
