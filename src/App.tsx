@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from './assets/reference.png'
+import logo from './assets/reference.jpg'
 import whatsappImg from './assets/whatsapp-hero.jpeg'
 import heroSchool from './assets/hero-school.jpg'
 import ProgrammesPage from './components/ProgrammesPage'
