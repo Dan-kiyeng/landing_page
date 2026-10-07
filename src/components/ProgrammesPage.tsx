@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-const logo = '/logo.jpg'
-const heroSchool = '/hero-school.jpg'
+const logo = '/logo.png'
+const heroSchool = '/hero-school.png'
 const whatsappImg = '/whatsapp-hero.jpeg'
 
 export interface ProgrammeDetail {
@@ -288,7 +288,7 @@ export default function ProgrammesPage({ onNavigateHome, onOpenApplyModal }: Pro
       {/* HERO SECTION */}
       <section className="relative bg-[#5a1226] text-white pt-12 pb-20 overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <img src={heroSchool} alt="Background" className="w-full h-full object-cover" />
+          <img src={logo} alt="Background" className="w-full h-full object-cover" />
         </div>
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#e8a92a]/10 rounded-full blur-3xl pointer-events-none" />
         

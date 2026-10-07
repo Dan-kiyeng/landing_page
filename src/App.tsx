@@ -3,9 +3,9 @@ import ProgrammesPage from './components/ProgrammesPage'
 import AdmissionsPage from './components/AdmissionsPage'
 import CloudSky from './components/CloudSky'
 
-const logo = '/logo.jpg'
+const logo = '/logo.png'
 const whatsappImg = '/whatsapp-hero.jpeg'
-const heroSchool = '/hero-school.jpg'
+const heroSchool = '/hero-school.png'
 
 const getInitials = (name: string) => {
   return name
@@ -275,7 +275,7 @@ export default function App() {
           <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-[#5a1226]">
             <div className="absolute inset-0">
               <img
-                src={heroSchool}
+                src={logo}
                 alt="Happy Grace Seeds School children smiling together"
                 className="w-full h-full object-cover opacity-30"
               />
