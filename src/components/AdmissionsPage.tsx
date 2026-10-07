@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/reference.jpg'
+import logo from '../assets/logo.svg'
 import heroSchool from '../assets/hero-school.jpg'
 
 export interface AdmissionsPageProps {

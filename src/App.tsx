@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from './assets/reference.jpg'
+import logo from './assets/logo.svg'
 import whatsappImg from './assets/whatsapp-hero.jpeg'
 import heroSchool from './assets/hero-school.jpg'
 import ProgrammesPage from './components/ProgrammesPage'
@@ -19,7 +19,7 @@ const getInitials = (name: string) => {
 const handleAvatarError = (e: React.SyntheticEvent<HTMLImageElement, Event>, name: string) => {
   const initials = getInitials(name)
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><rect width="100%" height="100%" fill="#7b1c35"/><text x="50%" y="54%" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f5c84a" text-anchor="middle" dominant-baseline="middle">${initials}</text></svg>`
-  e.currentTarget.src = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
+  e.currentTarget.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`
 }
 
 const NAV_LINKS = [
