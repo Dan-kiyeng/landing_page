@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.svg'
-import heroSchool from '../assets/hero-school.jpg'
-import whatsappImg from '../assets/whatsapp-hero.jpeg'
+
+const logo = '/logo.jpg'
+const heroSchool = '/hero-school.jpg'
+const whatsappImg = '/whatsapp-hero.jpeg'
 
 export interface ProgrammeDetail {
   id: string

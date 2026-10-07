@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import logo from './assets/logo.svg'
-import whatsappImg from './assets/whatsapp-hero.jpeg'
-import heroSchool from './assets/hero-school.jpg'
 import ProgrammesPage from './components/ProgrammesPage'
 import AdmissionsPage from './components/AdmissionsPage'
 import CloudSky from './components/CloudSky'
+
+const logo = '/logo.jpg'
+const whatsappImg = '/whatsapp-hero.jpeg'
+const heroSchool = '/hero-school.jpg'
 
 const getInitials = (name: string) => {
   return name

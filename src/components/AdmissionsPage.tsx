@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.svg'
-import heroSchool from '../assets/hero-school.jpg'
+
+const logo = '/logo.jpg'
+const heroSchool = '/hero-school.jpg'
 
 export interface AdmissionsPageProps {
   onNavigateHome: () => void
