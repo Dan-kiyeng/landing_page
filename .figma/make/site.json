@@ -2,7 +2,7 @@
   "title": "Grace Seeds School",
   "description": "Grace Seeds School landing page showcasing academic programmes, CBC curriculum, fee structure, and admissions details for Playgroup through Grade 6 in Kisumu.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

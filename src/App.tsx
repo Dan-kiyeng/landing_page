@@ -3,8 +3,8 @@ import ProgrammesPage from './components/ProgrammesPage'
 import AdmissionsPage from './components/AdmissionsPage'
 import CloudSky from './components/CloudSky'
 
-const logo = '/logo.png'
-const whatsappImg = '/whatsapp-hero.jpeg'
+const logo = '/logo.jpg'
+const whatsappImg = '/hero-school.png'
 const heroSchool = '/hero-school.png'
 
 const getInitials = (name: string) => {
