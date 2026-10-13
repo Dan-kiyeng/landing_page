@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const logo = '/logo.png'
+const logo = '/logo.jpg'
 const heroSchool = '/hero-school.png'
 const whatsappImg = '/whatsapp-hero.jpeg'
 
