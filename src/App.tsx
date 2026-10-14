@@ -71,6 +71,33 @@ const STATS = [
   { value: '12', label: 'Extra-curricular clubs' },
 ]
 
+const KEY_OBJECTIVES = [
+  {
+    key: 'a',
+    title: 'Problem Solving',
+    desc: 'To develop Skills that will help in problem solving',
+    icon: '💡',
+  },
+  {
+    key: 'b',
+    title: 'Confidence & Resilience',
+    desc: 'To bring out a confident child with ability to take up challenges',
+    icon: '🦁',
+  },
+  {
+    key: 'c',
+    title: 'Teamwork & Cooperation',
+    desc: 'To teach a child to work, learn and get along with others',
+    icon: '🤝',
+  },
+  {
+    key: 'd',
+    title: 'Nurturing Full Potential',
+    desc: "To nurture each child's talent and bring out their full potential",
+    icon: '🌱',
+  },
+]
+
 const VALUES = [
   {
     title: 'Faith & Character',
@@ -361,11 +388,11 @@ export default function App() {
                   A school where every<br />
                   <em className="text-[#e8a92a] not-italic">seed flourishes</em>
                 </h2>
-                <p className="text-[#8a6470] text-base leading-relaxed mb-5">
-                  Founded on principles of faith and academic excellence, Grace Seeds School has been shaping young lives for over 13 years. We believe every child is a seed of potential — and our role is to provide the rich soil, warmth, and care they need to grow.
+                <p className="text-[#8a6470] text-base leading-relaxed mb-4">
+                  Our school is a smooth introduction to real school life for all learners that join us, we set a firm foundation for the rest of the child's education.
                 </p>
                 <p className="text-[#8a6470] text-base leading-relaxed mb-8">
-                  Our dedicated teachers bring learning to life through activity-based methods, making every classroom a place of discovery, laughter, and growth.
+                  At Grace Seeds School, we endeavor to give opportunity to each child to learn and practice the essential, social, emotional and study skills that they will use throughout their school life.
                 </p>
                 <button
                   onClick={() => {
@@ -413,24 +440,122 @@ export default function App() {
             </div>
           </section>
 
-          {/* VALUES */}
-          <section className="py-20 bg-[#5a1226]">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12">
-              <div className="text-center mb-14">
-                <p className="text-[#f5c84a] text-xs font-bold tracking-widest uppercase mb-3">Our Core Values</p>
-                <h2 style={{ fontFamily: 'Fraunces, serif' }} className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+          {/* WHAT WE STAND FOR: VISION, MISSION, OBJECTIVES & VALUES */}
+          <section className="py-20 bg-[#5a1226] relative overflow-hidden">
+            {/* Soft decorative background glows */}
+            <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#f5c84a]/5 blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-white/5 blur-3xl pointer-events-none" />
+
+            <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
+              <div className="text-center mb-16">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-[#f5c84a] text-xs font-bold tracking-widest uppercase mb-3 border border-[#f5c84a]/30">
+                  Our Purpose & Commitments
+                </span>
+                <h2 style={{ fontFamily: 'Fraunces, serif' }} className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-2">
                   What we stand for
                 </h2>
+                <p style={{ fontFamily: 'Fraunces, serif' }} className="text-[#f5c84a] text-lg italic tracking-wide">
+                  "The Future Begins Here"
+                </p>
               </div>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                {VALUES.map(v => (
-                  <div key={v.title} className="bg-white/10 hover:bg-white/15 border border-white/20 rounded-2xl p-6 transition-all duration-300">
-                    <div className="text-4xl mb-4">{v.icon}</div>
-                    <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-lg font-bold text-[#f5c84a] mb-3">{v.title}</h3>
-                    <p className="text-white/70 text-sm leading-relaxed">{v.desc}</p>
+              {/* VISION & MISSION SPOTLIGHT */}
+              <div className="grid md:grid-cols-2 gap-8 mb-14">
+                {/* Vision Card */}
+                <div className="bg-gradient-to-br from-white/12 to-white/5 hover:from-white/16 hover:to-white/8 border border-white/20 hover:border-[#f5c84a]/50 rounded-3xl p-8 lg:p-10 transition-all duration-300 shadow-xl backdrop-blur-sm relative group">
+                  <div className="flex items-center gap-4 mb-5">
+                    <span className="text-3xl p-3 rounded-2xl bg-[#f5c84a]/15 text-[#f5c84a] border border-[#f5c84a]/30">
+                      🌟
+                    </span>
+                    <div>
+                      <p className="text-[#f5c84a] text-xs font-bold uppercase tracking-wider">Our North Star</p>
+                      <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-3xl font-bold text-white">
+                        Vision
+                      </h3>
+                    </div>
                   </div>
-                ))}
+                  <blockquote className="text-white/90 text-lg sm:text-xl leading-relaxed italic border-l-2 border-[#f5c84a] pl-4">
+                    "To develop well-rounded, confident and responsible individuals who aspire to achieve their full potential."
+                  </blockquote>
+                </div>
+
+                {/* Mission Card */}
+                <div className="bg-gradient-to-br from-white/12 to-white/5 hover:from-white/16 hover:to-white/8 border border-white/20 hover:border-[#f5c84a]/50 rounded-3xl p-8 lg:p-10 transition-all duration-300 shadow-xl backdrop-blur-sm relative group">
+                  <div className="flex items-center gap-4 mb-5">
+                    <span className="text-3xl p-3 rounded-2xl bg-[#f5c84a]/15 text-[#f5c84a] border border-[#f5c84a]/30">
+                      🎯
+                    </span>
+                    <div>
+                      <p className="text-[#f5c84a] text-xs font-bold uppercase tracking-wider">Our Daily Commitment</p>
+                      <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-3xl font-bold text-white">
+                        Mission
+                      </h3>
+                    </div>
+                  </div>
+                  <blockquote className="text-white/90 text-lg sm:text-xl leading-relaxed italic border-l-2 border-[#f5c84a] pl-4">
+                    "To provide high quality education and child care in a safe, Respectful and inclusive environment that build a foundation for lifelong learning."
+                  </blockquote>
+                </div>
+              </div>
+
+              {/* KEY OBJECTIVES */}
+              <div className="bg-white/5 border border-white/15 rounded-3xl p-8 lg:p-10 mb-14 shadow-2xl backdrop-blur-sm">
+                <div className="text-center max-w-2xl mx-auto mb-10">
+                  <span className="text-[#f5c84a] text-xs font-bold uppercase tracking-widest block mb-1">
+                    Cornerstones of Growth
+                  </span>
+                  <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-3xl font-bold text-white">
+                    Key Objectives
+                  </h3>
+                  <p className="text-white/70 text-sm mt-2">
+                    Our concrete aims designed to nurture, inspire, and elevate every child every day.
+                  </p>
+                </div>
+
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {KEY_OBJECTIVES.map(obj => (
+                    <div
+                      key={obj.key}
+                      className="bg-white/10 hover:bg-white/15 border border-white/15 hover:border-[#f5c84a]/50 rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between group"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between mb-4">
+                          <span className="w-8 h-8 rounded-full bg-[#f5c84a] text-[#5a1226] font-bold text-sm flex items-center justify-center font-mono shadow-md">
+                            {obj.key})
+                          </span>
+                          <span className="text-2xl group-hover:scale-110 transition-transform">{obj.icon}</span>
+                        </div>
+                        <h4 style={{ fontFamily: 'Fraunces, serif' }} className="text-lg font-bold text-[#f5c84a] mb-2">
+                          {obj.title}
+                        </h4>
+                        <p className="text-white/85 text-sm leading-relaxed">
+                          {obj.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* CORE VALUES */}
+              <div>
+                <div className="text-center mb-8">
+                  <span className="text-[#f5c84a] text-xs font-bold uppercase tracking-widest block mb-1">
+                    Moral Foundation
+                  </span>
+                  <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-2xl font-bold text-white/90">
+                    Our Core Values
+                  </h3>
+                </div>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {VALUES.map(v => (
+                    <div key={v.title} className="bg-white/5 hover:bg-white/10 border border-white/15 rounded-2xl p-5 transition-all duration-300">
+                      <div className="text-3xl mb-3">{v.icon}</div>
+                      <h4 style={{ fontFamily: 'Fraunces, serif' }} className="text-base font-bold text-[#f5c84a] mb-2">{v.title}</h4>
+                      <p className="text-white/70 text-xs leading-relaxed">{v.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </section>
