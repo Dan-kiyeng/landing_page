@@ -459,6 +459,34 @@ export default function App() {
                 </p>
               </div>
 
+              {/* ABOUT US SPOTLIGHT */}
+              <div className="bg-gradient-to-r from-white/15 via-white/10 to-white/5 border border-white/20 hover:border-[#f5c84a]/40 rounded-3xl p-8 lg:p-10 mb-12 shadow-2xl backdrop-blur-sm transition-all duration-300">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 pb-6 border-b border-white/10">
+                  <div className="flex items-center gap-4">
+                    <span className="text-3xl p-3 rounded-2xl bg-[#f5c84a]/15 text-[#f5c84a] border border-[#f5c84a]/30">
+                      🏫
+                    </span>
+                    <div>
+                      <span className="text-[#f5c84a] text-xs font-bold uppercase tracking-wider block">Grace Seeds School</span>
+                      <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-2xl lg:text-3xl font-bold text-white">
+                        About Us
+                      </h3>
+                    </div>
+                  </div>
+                  <span className="text-white/70 text-xs tracking-wider uppercase bg-white/5 border border-white/10 px-4 py-1.5 rounded-full font-medium">
+                    A Firm Foundation
+                  </span>
+                </div>
+                <div className="space-y-4 text-white/90 text-base lg:text-lg leading-relaxed font-light">
+                  <p>
+                    Our school is a smooth introduction to real school life for all learners that join us, we set a firm foundation for the rest of the child's education.
+                  </p>
+                  <p>
+                    At Grace Seeds School, we endeavor to give opportunity to each child to learn and practice the essential, social, emotional and study skills that they will use throughout their school life.
+                  </p>
+                </div>
+              </div>
+
               {/* VISION & MISSION SPOTLIGHT */}
               <div className="grid md:grid-cols-2 gap-8 mb-14">
                 {/* Vision Card */}
