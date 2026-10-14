@@ -101,6 +101,7 @@ export const ADMISSION_FAQS = [
 export default function AdmissionsPage({ onNavigateHome, onNavigateProgrammes }: AdmissionsPageProps) {
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0)
+  const [phoneCopied, setPhoneCopied] = useState(false)
   const [formData, setFormData] = useState({
     parentName: '',
     phone: '',
@@ -336,12 +337,25 @@ export default function AdmissionsPage({ onNavigateHome, onNavigateProgrammes }:
               </div>
             </div>
 
-            <a
-              href="tel:0745436312"
-              className="bg-[#e8a92a] hover:bg-[#f5c84a] text-[#5a1226] font-bold px-6 py-3.5 rounded-full text-xs transition-colors inline-block w-full text-center"
+            <button
+              type="button"
+              onClick={() => {
+                navigator.clipboard?.writeText('0745436312')
+                setPhoneCopied(true)
+                setTimeout(() => setPhoneCopied(false), 3000)
+                const contactEl = document.getElementById('admissions-contacts')
+                if (contactEl) {
+                  contactEl.scrollIntoView({ behavior: 'smooth' })
+                }
+              }}
+              className="bg-[#e8a92a] hover:bg-[#f5c84a] text-[#5a1226] font-bold px-6 py-3.5 rounded-full text-xs sm:text-sm transition-all duration-200 w-full text-center shadow-lg hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer"
             >
-              Call Admissions Desk to Book Tour →
-            </a>
+              <span>📞</span>
+              <span>{phoneCopied ? '✓ Copied: 0745 436312' : 'Call Admissions: 0745 436312'}</span>
+            </button>
+            <p className="text-center text-[11px] text-white/60 mt-2">
+              Click to copy number or view contacts below
+            </p>
           </div>
         </div>
       </section>
@@ -574,6 +588,55 @@ export default function AdmissionsPage({ onNavigateHome, onNavigateProgrammes }:
                 </div>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACTS SECTION */}
+      <section id="admissions-contacts" className="py-16 bg-[#5a1226] text-white border-t border-white/10 scroll-mt-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="text-center mb-10">
+            <span className="text-[#f5c84a] text-xs font-bold uppercase tracking-widest block mb-2">Get In Touch</span>
+            <h3 style={{ fontFamily: 'Fraunces, serif' }} className="text-3xl lg:text-4xl font-bold text-white">
+              Admissions & Campus Contacts
+            </h3>
+            <p className="text-white/70 text-sm mt-2 max-w-xl mx-auto">
+              Ready to schedule a tour or have questions? Contact our admissions office directly or visit us during visiting hours.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 text-center md:text-left">
+            <div className="bg-white/10 p-6 rounded-2xl border border-white/15">
+              <div className="text-3xl mb-3">📍</div>
+              <h4 style={{ fontFamily: 'Fraunces, serif' }} className="text-lg font-bold text-[#f5c84a] mb-1">Campus Location</h4>
+              <p className="text-white/80 text-sm">Kisumu, Kisian, KEMRI Road</p>
+              <p className="text-white/50 text-xs mt-2">Visiting: Mon – Fri: 8:00 AM – 3:00 PM</p>
+            </div>
+
+            <div className="bg-white/10 p-6 rounded-2xl border border-white/15">
+              <div className="text-3xl mb-3">📞</div>
+              <h4 style={{ fontFamily: 'Fraunces, serif' }} className="text-lg font-bold text-[#f5c84a] mb-1">Admissions Phone</h4>
+              <p className="text-white text-base font-bold text-[#f5c84a]">0745 436312</p>
+              <p className="text-white/60 text-xs mt-1">Direct call or WhatsApp inquiry</p>
+              <button
+                type="button"
+                onClick={() => {
+                  navigator.clipboard?.writeText('0745436312')
+                  setPhoneCopied(true)
+                  setTimeout(() => setPhoneCopied(false), 3000)
+                }}
+                className="mt-3 text-xs text-[#f5c84a] hover:text-white underline cursor-pointer inline-block"
+              >
+                {phoneCopied ? '✓ Copied to clipboard' : 'Click to copy number'}
+              </button>
+            </div>
+
+            <div className="bg-white/10 p-6 rounded-2xl border border-white/15">
+              <div className="text-3xl mb-3">✉️</div>
+              <h4 style={{ fontFamily: 'Fraunces, serif' }} className="text-lg font-bold text-[#f5c84a] mb-1">Email Office</h4>
+              <p className="text-white/80 text-sm">schoolgraceseeds@gmail.com</p>
+              <p className="text-white/50 text-xs mt-2">Response within 24 hours</p>
+            </div>
           </div>
         </div>
       </section>
